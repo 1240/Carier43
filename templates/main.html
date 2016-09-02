@@ -1,0 +1,86 @@
+{% load staticfiles %}
+{% load widget_tweaks %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="{% static 'js/bootstrap_3.3.7.js' %}" type="application/javascript" charset="UTF-8"></script>
+    <script src="{% static 'js/contact_form_validator.js' %}" type="application/javascript" charset="UTF-8"></script>
+    <meta charset="UTF-8">
+    <title>Карьер 43</title>
+</head>
+<body>
+<div class="container">
+
+    <form class="well form-horizontal" action=" " method="post" id="contact_form">
+        {% csrf_token %}
+        <fieldset>
+
+            <!-- Form Name -->
+            <legend>Оставьте заявку!</legend>
+
+            <!-- Text input-->
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">ФИО</label>
+                <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        {%  render_field form.name class+="form-control"  %}
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Text input-->
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Номер телефона </label>
+                <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                        {%  render_field form.phone_number class+="form-control"  %}
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text input-->
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Кол-во</label>
+                <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                        {%  render_field form.count class+="form-control"  %}
+                    </div>
+                </div>
+            </div>
+
+            <!-- Select Basic -->
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Продукт</label>
+                <div class="col-md-4 selectContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                        {%  render_field form.product class+="form-control selectpicker"  %}
+
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Button -->
+        <div class="form-group">
+            <label class="col-md-4 control-label"></label>
+            <div class="col-md-4">
+                <button type="submit" class="btn btn-warning">Отправить <span class="glyphicon glyphicon-send"></span>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+</div>
+</body>
+</html>
