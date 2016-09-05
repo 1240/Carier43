@@ -1,86 +1,107 @@
 {% load staticfiles %}
+{% load static %}
 {% load widget_tweaks %}
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="{% static 'css/bootstrap-theme.css' %}"/>
+    <script src="{% static 'js/jquery-3.1.0.min.js' %}" type="application/javascript" charset="UTF-8"></script>
     <script src="{% static 'js/bootstrap_3.3.7.js' %}" type="application/javascript" charset="UTF-8"></script>
-    <script src="{% static 'js/contact_form_validator.js' %}" type="application/javascript" charset="UTF-8"></script>
     <meta charset="UTF-8">
     <title>Карьер 43</title>
 </head>
-<body>
-<div class="container">
+<body class="body">
 
-    <form class="well form-horizontal" action=" " method="post" id="contact_form">
-        {% csrf_token %}
-        <fieldset>
-
-            <!-- Form Name -->
-            <legend>Оставьте заявку!</legend>
-
-            <!-- Text input-->
-
-            <div class="form-group">
-                <label class="col-md-4 control-label">ФИО</label>
-                <div class="col-md-4 inputGroupContainer">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                        {%  render_field form.name class+="form-control"  %}
-                    </div>
+<div class="col-sm-4">
+    {% include "contact_form.html" %}
+</div>
+<div class="col-sm-4">
+    <h1 class="text-center"></h1>
+</div>
+<div class="col-sm-4">
+    <div class="form-horizontal well">
+        <div class="form-group ">
+            <label class="col-md-4 control-label">Номер телефона </label>
+            <div class="col-md-8 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                    <span class="form-control">(912) 364-1097</span>
                 </div>
-            </div>
-
-
-            <!-- Text input-->
-
-            <div class="form-group">
-                <label class="col-md-4 control-label">Номер телефона </label>
-                <div class="col-md-4 inputGroupContainer">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                        {%  render_field form.phone_number class+="form-control"  %}
-                    </div>
-                </div>
-            </div>
-
-            <!-- Text input-->
-
-            <div class="form-group">
-                <label class="col-md-4 control-label">Кол-во</label>
-                <div class="col-md-4 inputGroupContainer">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                        {%  render_field form.count class+="form-control"  %}
-                    </div>
-                </div>
-            </div>
-
-            <!-- Select Basic -->
-
-            <div class="form-group">
-                <label class="col-md-4 control-label">Продукт</label>
-                <div class="col-md-4 selectContainer">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                        {%  render_field form.product class+="form-control selectpicker"  %}
-
-                    </div>
-                </div>
-            </div>
-        </fieldset>
-
-        <!-- Button -->
-        <div class="form-group">
-            <label class="col-md-4 control-label"></label>
-            <div class="col-md-4">
-                <button type="submit" class="btn btn-warning">Отправить <span class="glyphicon glyphicon-send"></span>
-                </button>
             </div>
         </div>
-    </form>
+    </div>
 </div>
+<div class="col-sm-12 col-xs-6 text-center">
+    <ul class="plans">
+        <li class="plan highlight">
+            <span class="price price-green">700₽</span>
+            <div class="details">
+                <h1 class="plan-title">Гравий</h1>
+                {#                    <p class="plan-description">Not even a cookie</p>#}
+            </div>
+        </li>
+
+        <li class="plan highlight">
+            <span class="price price-green">400₽</span>
+            <div class="details">
+                <h1 class="plan-title">ПГС</h1>
+                {#                    <p class="plan-description">Not even a cookie</p>#}
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="col-sm-12 col-xs-6 text-center">
+    <ul class="plans">
+        <li class="plan highlight">
+            <span class="price price-green">150₽</span>
+            <div class="details">
+                <h1 class="plan-title">Песок</h1>
+                <p class="plan-description">Речной</p>
+            </div>
+        </li>
+
+        <li class="plan highlight">
+            <span class="price price-green">130₽</span>
+            <div class="details">
+                <h1 class="plan-title">Песок</h1>
+                <p class="plan-description">Боровой</p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="col-sm-12 col-xs-12">
+    <div class="well"><p>Lorem ipsum dolor sit amet, his simul veritus theophrastus in, summo mucius qui ne. Eu affert
+        nullam vis.
+        Ea
+        odio
+        diceret admodum sed, vitae adipisci ut sed. Habeo volutpat laboramus cu nam. Sed nisl idque
+        signiferumque
+        ei,
+        audiam oblique scripserit in sea, alia apeirian reprimique ut eos. Sit justo aliquid ceteros ut.
+
+        Et eam tota dolores, doctus ocurreret neglegentur an his. Prima persius id has, ius salutandi dissentias
+        cu.
+        Alia persequeris consequuntur his ne, sea velit consectetuer an. Id has facilisi inimicus, ea placerat
+        voluptatum eam. Utroque officiis democritum his ut, ei semper eleifend ius, sit officiis perfecto
+        definitiones
+        id. Cu vim case sensibus elaboraret, vocent gubergren vulputate ut eam.
+
+        Nec perpetua sententiae at, cu mentitum inimicus usu. Has verterem recusabo dissentiet no, et propriae
+        indoctum
+        honestatis duo, dolor solet prodesset pri ne. An inani voluptua perpetua his. Nullam explicari ius ex,
+        prima
+        deterruisset pro id. Ea est putant fuisset dissentiet, sea aeque tempor efficiantur ad. Sit ut sonet
+        denique,
+        pro ut modo rebum explicari.
+
+        No est ludus option, habeo veniam ubique an per. Alia porro cum ex, est in case equidem invenire. Ad sea
+        malis
+        saperet, cu mollis scripta vix, ex propriae facilisi nec. Malorum assueverit dissentiunt ad mea. Ei sed
+        ornatus
+        commune, facer debet has ea.</p></div>
 </div>
 </body>
 </html>
