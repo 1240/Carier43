@@ -16,7 +16,11 @@
 <body class="body">
 
 <div class="col-sm-4">
-    {% include "contact_form.html" %}
+    {% if for_thanks %}
+        {% include "thanks_form.html" %}
+    {% else %}
+        {% include "contact_form.html" %}
+    {% endif %}
 </div>
 <div class="col-sm-4">
     <h1 class="text-center"></h1>
