@@ -13,7 +13,7 @@ def index(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             body = " Номер телефона: {0} \n Продукт: {1} \n Кол-во тонн: {2}".format(form.cleaned_data['phone_number'], form.cleaned_data['product'], form.cleaned_data['count'])
-            email = EmailMessage("Заявка на сайте 'Карьер 43'", body, "carierkirov43@gmail.com", to=["chuffey.1240@ya.ru"])
+            email = EmailMessage("Заявка на сайте 'гравийпесок.рф'", body, "carierkirov43@gmail.com", to=["chuffey.1240@ya.ru"])
             email.send()
             return HttpResponseRedirect('/thanks/')
     else:

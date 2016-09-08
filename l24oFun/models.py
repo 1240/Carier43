@@ -19,6 +19,6 @@ class ContactForm(forms.Form):
                                  message="Phone number must be entered in the format: '(123) 456-7890'. Up to 15 digits allowed.")
     phone_number = forms.CharField(required=True, label="Номер телефона", validators=[phone_regex])
     product = forms.ModelChoiceField(required=True, queryset=Product.objects.all(), label="Продукт")
-    count = forms.IntegerField(min_value=1, required=True, label="Количество")
+    count = forms.CharField(required=True, label="Количество")
 
 
