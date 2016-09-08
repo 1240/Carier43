@@ -123,8 +123,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'collected_static')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
-    '/static/css',
-    '/static/js',
+    os.path.join(BASE_DIR, "static/css"),
+    os.path.join(BASE_DIR, "static/js"),
 ]
 
 EMAIL_USE_TLS = True
