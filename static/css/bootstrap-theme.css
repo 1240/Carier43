@@ -82,6 +82,17 @@ body {
     padding: 0;
 }
 
+.tab-content {
+    background: white;
+    padding: 10px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab-header {
+    background-color: #f5f5f5;
+}
 .plans .plan {
     background: white;
     border-radius: 6px;
