@@ -16,7 +16,7 @@ def index(request):
         if form.is_valid():
             body = " Номер телефона: {0} \n Продукт: {1} \n Кол-во: {2}".format(form.cleaned_data['phone_number'], form.cleaned_data['product'], form.cleaned_data['count'])
             email = EmailMessage("Заявка на сайте 'гравийпесок.рф'", body, "carierkirov43@gmail.com",
-                                 to=["chuffey.1240@ya.ru"])
+                                 to=["467686@mail.ru"])
             email.send()
             for_thanks = True
     else:
