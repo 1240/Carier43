@@ -158,6 +158,17 @@ body {
     padding: 0 10px;
 }
 
+.info-block {
+    width: 295px
+}
+
+@media (max-width: 768px) {
+    .info-block {
+        width: 195px;
+        height: 65px !important;
+    }
+}
+
 .plans .plan .details .plan-title {
     font-size: 17px;
     font-weight: normal;
