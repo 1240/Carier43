@@ -159,12 +159,12 @@ body {
 }
 
 .info-block {
-    width: 295px
+    width: 295px !important;
 }
 
 @media (max-width: 768px) {
     .info-block {
-        width: 195px;
+        width: 195px !important;
         height: 65px !important;
     }
 }
