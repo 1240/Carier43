@@ -26,7 +26,7 @@
                     <div class="col-md-8 inputGroupContainer">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                            {% render_field form.phone_number class+="form-control" id="phone" placeholder="(123) 456-7890" required="required" title="пример: (123) 456-7890" pattern="^\([0-9]{3}\)\s[0-9]{3}-[0-9]{4}$" %}
+                            {% render_field form.phone_number class+="form-control" id="phone" style+="width:150px;" placeholder="(123) 456-7890" required="required" title="пример: (123) 456-7890" pattern="^\([0-9]{3}\)\s[0-9]{3}-[0-9]{4}$" %}
                         </div>
                     </div>
                 </div>
@@ -38,7 +38,7 @@
                     <div class="col-md-8 inputGroupContainer">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                            {% render_field form.count class+="form-control" %}
+                            {% render_field form.count class+="form-control" style+="width:150px;" %}
                         </div>
                     </div>
                 </div>
@@ -50,7 +50,7 @@
                     <div class="col-md-8 selectContainer">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                            {% render_field form.product class+="form-control selectpicker" %}
+                            {% render_field form.product class+="form-control selectpicker" style+="width:150px;" %}
 
                         </div>
                     </div>
