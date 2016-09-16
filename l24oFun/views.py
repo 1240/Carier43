@@ -23,3 +23,7 @@ def index(request):
         for_thanks = False
         form = ContactForm()
     return render(request, 'main.html', {'products': products, 'form': form, "for_thanks": for_thanks})
+
+
+def gravii(request):
+    return render(request, 'gravii.html')

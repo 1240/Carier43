@@ -162,10 +162,18 @@ body {
     width: 297px !important;
 }
 
+.margin_bottom {
+    padding: 400px !important;
+}
+
 @media (max-width: 768px) {
     .info-block {
         width: 195px !important;
         height: 65px !important;
+    }
+
+    .margin-bottom {
+        padding: 0;
     }
 }
 

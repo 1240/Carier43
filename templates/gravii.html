@@ -1,0 +1,77 @@
+{% load staticfiles %}
+{% load static %}
+{% load widget_tweaks %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="{% static 'css/bootstrap-theme.css' %}"/>
+    <script src="{% static 'js/jquery-3.1.0.min.js' %}" type="application/javascript" charset="UTF-8"></script>
+    <script src="{% static 'js/bootstrap_3.3.7.js' %}" type="application/javascript" charset="UTF-8"></script>
+    <meta charset="UTF-8">
+    <title>гравийпесок.рф</title>
+</head>
+<body class="body">
+
+<div class="col-sm-4">
+    {% include "back_form.html" %}
+</div>
+<div class="col-sm-4">
+    <h1 class="text-center"></h1>
+</div>
+<div class="col-sm-4 text-center">
+    <h4>Наши номера телефонов</h4>
+    <div class="form-horizontal">
+        <div class="form-group-lg">
+            <div class="col-md-12 ">
+                <div class="input-group" style="margin-bottom: 10px; display: inline-block;">
+                    <span class="left-icon nopadding"><i class="glyphicon glyphicon-earphone"></i></span>
+                    <span class="form-control nopadding" style="width: 162px">8 (8332) 46-76-86</span>
+                </div>
+            </div>
+        </div>
+        <div class="form-group-lg">
+            <div class="col-md-12 ">
+                <div class="input-group" style="display: inline-block;">
+                    <span class="left-icon nopadding"><i class="glyphicon glyphicon-earphone"></i></span>
+                    <span class="form-control nopadding" style="width: 162px">8 (8332) 423-324</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-sm-12 text-center">
+    <ul class="plans">
+        <li class="plan highlight">
+            <span class="price price-green">700₽</span>
+            <div class="details">
+                <h1 class="plan-title">Гравий</h1>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="col-sm-12">
+    <div class="tab-content" style="height: 250px; overflow-y: auto">
+        <p>Гравий необходим для различных нужд. Наиболее популярной сферой его применения являются различные
+            строительные и ремонтные работы.
+            Гравий в качестве наполнителей для бетонов лёгкой группы позволяет добиться хорошей звуко- и
+            теплоизоляции. В основном он используется как заполнитель для тяжёлых бетонов во время проведения
+            дорожных или строительных работ. Материал также очень популярен при укладке фундамента здания.
+            Часто всевозможные фракции гравия применяются в ландшафтном дизайне и декорировании. Материал
+            отличается своей естественностью и не потребует слишком больших затрат вашего времени и денег на
+            уход.<br>Использование фракций разных размеров<br>
+            Гравий состоит из фракций, стандартные размеры которых, как правило, составляют 10-20 мм, 20-40 мм,
+            40-50 мм.<br>
+            Наиболее востребованной является фракция с размерами 10-20 и 20-40. Она в основном используется в
+            фундаментных работах, а также при производстве асфальта и бетона. Крупный гравий необходим для
+            различных видов строительных работ, а также для ремонта автомобильных и железнодорожных путей. Из
+            мелкозернистого материала обычно насыпают декоративные дорожки, тропинки или площадки.
+        </p>
+    </div>
+</div>
+<div class="margin_bottom"></div>
+</body>
+</html>

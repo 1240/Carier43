@@ -5,5 +5,6 @@ from l24oFun import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^gravii/', views.gravii),
     url(r'^$', views.index, name='home'),
 ]
