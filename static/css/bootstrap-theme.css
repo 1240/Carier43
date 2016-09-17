@@ -163,7 +163,8 @@ body {
 }
 
 .margin_bottom {
-    padding: 400px !important;
+    padding-top: 400px !important;
+    padding-bottom: 400px !important;
 }
 
 @media (max-width: 768px) {
